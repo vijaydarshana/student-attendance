@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="top-bar">
+    <div class="left-controls">
+        <label>Select a Date:</label>
+        <input type="date" id="date">
+        <button class="btn-search" onclick="search()">Search</button>
+    </div>
+     <button class="btn-report" onclick="fetchReport()">Fetch Attendance Report</button>
+</div>
+
+
+<div class="students-container" id="studentList" style="display:none;">
+
+    <div class="student-row">
+        <span class="student-name">Siva</span>
+        <div class="actions">
+            <label class="present"><input type="checkbox" class="present-cb"> Present</label>
+            <label class="absent"><input type="checkbox" class="absent-cb"> Absent</label>
+        </div>
+    </div>
+
+    <div class="student-row">
+        <span class="student-name">Rajesh</span>
+        <div class="actions">
+            <label class="present"><input type="checkbox" class="present-cb"> Present</label>
+            <label class="absent"><input type="checkbox" class="absent-cb"> Absent</label>
+        </div>
+    </div>
+
+    <div class="student-row">
+        <span class="student-name">Ashok</span>
+        <div class="actions">
+            <label class="present" >
+                <input type="checkbox" class="present-cb"> Present</label>
+            <label class="absent"><input type="checkbox" class="absent-cb"> Absent</label>
+        </div>
+    </div>
+
+    <div class="student-row">
+        <span class="student-name">Sai</span>
+        <div class="actions">
+            <label class="present"><input type="checkbox" class="present-cb"> Present</label>
+            <label class="absent"><input type="checkbox" class="absent-cb"> Absent</label>
+        </div>
+    </div>
+
+   <div class="btn">
+    <button onclick="markAttendance()">Mark</button>
+</div>
+
+
+</div>
+<div id="report"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

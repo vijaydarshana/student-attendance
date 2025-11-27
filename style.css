@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.left-controls label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    padding: 5px 8px;
+}
+
+.btn-search {
+    padding: 6px 14px;
+    margin-left: 8px;
+    border: none;
+    background: #17a2b8;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-report {
+    padding: 6px 14px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.students-container {
+    padding: 30px 60px;
+   
+}
+
+.student-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+
+.student-name {
+    font-size: 16px;
+}
+
+
+.actions {
+    margin-left: auto;
+}
+
+.present-btn {
+ 
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.absent-btn {
+  
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+.active {
+    outline: 3px solid #000;
+}
+.btn{
+  
+   
+    margin: 350px 0;
+
+}
+
+#report {
+    width: 60%;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+#report h3 {
+    margin-top: 0;
+}
