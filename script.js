@@ -1,4 +1,4 @@
-// Show / hide student list and load saved data if exists
+
 function search() {
     const date = document.getElementById("date").value;
     const studentList = document.getElementById("studentList");
@@ -12,7 +12,6 @@ function search() {
     loadAttendanceForDate(date);
 }
 
-// Save attendance for a date and replace checkboxes with text
 function markAttendance() {
     const date = document.getElementById("date").value;
 
@@ -107,19 +106,19 @@ function fetchReport() {
     const records = JSON.parse(localStorage.getItem("attendanceRecords") || "[]");
     const rows = document.querySelectorAll(".student-row");
 
-    // ✅ Only consider records up to & including selectedDate
+  
     const filteredRecords = records.filter(r => r.date <= selectedDate);
 
-    // ✅ Deduplicate per (name + date): keep LAST record for that day
+    
     const latestPerDay = {};
     filteredRecords.forEach(r => {
         const key = r.name + "|" + r.date;
-        latestPerDay[key] = r; // overwrite older entries for same name+date
+        latestPerDay[key] = r; 
     });
 
     const uniqueRecords = Object.values(latestPerDay);
 
-    // ✅ Build summary per student
+   
     const summary = {};
 
     uniqueRecords.forEach(r => {
