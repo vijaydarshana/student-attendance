@@ -136,7 +136,7 @@ function fetchReport() {
         }
     });
 
-    // ✅ Update UI
+    //  Update UI
     rows.forEach(row => {
         const name = row.querySelector(".student-name").textContent.trim();
         const actionsDiv = row.querySelector(".actions");
